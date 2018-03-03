@@ -1,0 +1,428 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(45deg, #407575,#e4e6e7,#e6e7e8);
+
+}
+p, li {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+	text-align: justify;
+}
+h3{
+	font-family: 'Rokkitt', serif;
+	font-size: 30px;
+	color: #00383b;
+	margin: 0;
+}
+/*HEADER*/
+header {
+	background: #129ba2;
+	width: 100%;
+	height: 300px;
+	text-align: center;
+}
+header img {
+	float: left;
+	height: 300px;
+}
+.pagetitle {
+	font-family: 'Nanum Pen Script', cursive;
+	color: #e6e7e8;
+	font-size: 125px;
+	text-align: center;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+/*NAVIGATION MENUE*/
+nav ul li {
+	font-family: 'Rokkitt', serif;
+	list-style-type: none;
+	position: relative;
+	font-size: 30px;
+	display: inline-block;
+	margin: 5px 25px;
+	padding: 5px;
+	color: #00383b;
+}
+nav ul li:hover{
+	background-color: #18949a;
+}
+nav ul li a{
+	display: inline-block;
+	margin: 5px 25px;
+	color: #00383b;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	color: #004346d6;
+	text-decoration: none;
+}
+
+/*MAIN*/
+.container{
+	max-width: 1300px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+main {
+	max-width: 1300px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+h2 {
+	font-family: 'Rokkitt', serif;
+	font-size: 45px;
+	color: #004346d6;
+	letter-spacing: 3px;
+	margin: 15px 0px 5px;
+}
+/*TRIP PLANNER*/
+.tour {
+	width: 31%;
+	text-align: center;
+	display: inline-block;
+	margin:10px;
+	position: relative;
+	box-sizing: border-box;
+}
+.tour img {
+	height: 300px;
+	width: 100%;
+	min-width: 300px;
+	object-fit: cover;
+}
+.details {
+	text-align: right;
+	float: right;
+	font-size: 30px;
+	margin: 0;
+	background: #0000003d;
+	color: #e6e7e8;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	display: none;
+	justify-content: space-around;
+	-ms-align-items: center;
+	align-items: center;
+}
+.tour:hover > .details{
+	display: flex;
+}
+
+.details p {
+	margin: 5px;
+}
+.details p:first-child::before {
+	content: "Durarion: ";
+}
+.details p:first-child::after {
+	content: " Days";
+}
+.details p:last-of-type::before {
+	content: "Price: ";
+}
+.details p:last-of-type::after {
+	content: "$";
+}
+.details button {
+	height: 30px;
+	float: right;
+
+}
+.details button:hover {
+	color:#00383b;
+	text-shadow:0px 0px 1px #00383b;
+		
+}
+
+.form div p{
+	font-size: 20px;
+	float:left;
+	text-align: left;
+	margin:0;
+	margin-right: 5px;
+}
+.form div:first-child{
+	margin-top: 10px;
+}
+.form div{
+	margin-bottom: 10px;
+}
+.form div:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+@media (min-width: 320px) and (max-width:868px){
+	.form div p{
+		font-size: 30px;
+	}
+	input{
+		width:100%;
+		height: 40px;
+	}
+	form button{
+		width:100px;
+		height: 40px;
+	}
+
+}
+
+
+/*FOOTER*/
+footer{
+	margin: 25px 0 0;
+	width: 100%;
+	height: 70px;
+	background: #18595d70;
+	color: #e6e7e8;
+}
+.fa:first-child{
+	margin-left: 50px;
+}
+.fa{
+	margin: 15px 10px;
+}
+footer a{
+	color: #00383b;
+	transition: 0.5s;
+}
+footer a:hover{
+	color: #e6e7e8;
+
+}
+footer p{
+	color: #00383b;
+	padding: 15px;
+	text-align:center;
+}
+.icons {
+	float:left;
+}
+
+.tick:after{
+			content: "Submit ✔";
+			
+		}
+
+.tick:hover:after{
+			color:#00383b;
+			text-shadow:0px 0px 1px #00383b;
+		}
+
+#cart {
+	position: fixed;
+	top: 15%;
+	height: 80%;
+	width: 70%;
+	left: 25%;
+	border: 3px solid #00383b;
+	padding: 10px;
+	background: #e6e7e8;
+	box-sizing: border-box;
+	display: none;
+	overflow-y: auto;
+}
+
+#cart table {
+	/*border: 2px solid #00383b;*/
+	border-collapse: collapse;
+	width: 100%;
+	margin: 10px auto;
+
+}
+
+
+#cart table td,th {
+	/*border: 1px solid #00383b;*/
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	color: #00383b;
+	padding: 5px;
+}
+
+#cart td>img {
+	width: 100px;
+	height: 100px;
+} 
+
+#cart table tr:nth-child(odd){
+	background: #d7dede;
+}
+
+#cart img {
+	object-fit: cover;
+}
+#closeCart {
+	float: right;
+}
+
+@media screen and (max-width: 1400px){
+	#cart {
+	top: 10%;
+	height: 80%;
+	width: 80%;
+	left: 10%;
+	padding: 5px;
+	}	
+}
+
+
+
+
+
+
+@media screen and (max-width: 1600px){
+	nav ul li {
+	font-size: 20px;
+	margin: 5px 15px;
+	padding: 0;
+	}
+
+}
+
+@media screen and (max-width: 1340px){
+	.pagetitle {
+	font-size: 100px;
+	margin-top: 40px;
+	}
+	nav ul li {
+	margin: 5px 5px;
+	}
+	nav ul li a{
+	margin: 5px 5px;
+	}
+}
+
+@media screen and (max-width: 1170px){
+	.pagetitle {
+	font-size: 80px;
+	margin-top: 45px;
+	margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 1060px){
+	.tour {
+	width: 46%;
+	}
+}
+
+@media screen and (max-width: 1045px){
+	.pagetitle {
+		color: #004346d6;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	header img {
+		float: none;
+	}
+	#about {
+		margin-top: 250px;
+	}
+}
+
+@media screen and (max-width: 775px){
+	#planner {
+		text-align: center;
+	}
+	.tour {
+	width: 60%;
+	}
+
+	#cart {
+	top: 10%;
+	height: 80%;
+	width: 90%;
+	left: 5%;
+	padding: 0;
+	}
+	
+
+}
+
+@media screen and (max-width: 720px){
+	#cart table tr td:first-child,
+	#cart table thead th:first-child, 
+	#cart table tr td:nth-child(4),
+	#cart table thead th:nth-child(4),
+	#cart table tr:last-child td:nth-child(2), 
+	#cart table tr:last-child td:nth-child(3) {
+		display: none;
+	}
+
+	#cart table tr:last-child td:first-child  {
+		display: table-cell;
+	}
+}
+
+@media screen and (max-width: 512px){
+	#about {
+		margin-top: 300px;
+	}
+	.pagetitle {
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+	nav ul {
+		padding-left: 0;
+	}
+	 nav ul li a {
+	 	margin: 0;
+	 }
+	header img {
+		margin-top: 25px;
+		width:100%;
+		height: auto;
+	}
+
+}
+
+@media screen and (max-width: 475px) {
+	nav ul li a {
+	 	margin: 0 10px;
+	 }
+	#about {
+		margin-top: 320px;
+	}
+	.tour {
+	width: 95%;
+	}
+
+	
+}
+
+@media screen and (max-width: 435px){
+	.pagetitle {
+		margin-top: 50px;
+	}
+	footer p{
+		display: none;
+	}
+
+	#cart table tr td:nth-child(2),
+	#cart table thead th:nth-child(3){
+		display: none;
+	}
+}
+
+@media screen and (max-width: 370px){
+	.pagetitle {
+		margin-top: 70px;
+	}
+	header img {
+		margin-top: 45px;
+	}
+
+}
+
+#cart.open {
+	display: block;
+}
