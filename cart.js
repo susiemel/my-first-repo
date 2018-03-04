@@ -32,11 +32,15 @@ var index = 1;
 function openCart() {
 	var cart = document.getElementById('cart');
 	cart.style.display = 'block';
+    dark.style.display = 'block';
+
 }
 
 function closeCart() {
 	var cart = document.getElementById('cart');
-	cart.style.display = "none";
+	cart.style.display = 'none';
+    dark.style.display = 'block';
+
 }
 
 function addElementToCart() {
