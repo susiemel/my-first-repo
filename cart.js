@@ -39,7 +39,7 @@ function openCart() {
 function closeCart() {
 	var cart = document.getElementById('cart');
 	cart.style.display = 'none';
-    dark.style.display = 'block';
+    dark.style.display = 'none';
 
 }
 

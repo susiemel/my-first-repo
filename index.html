@@ -11,7 +11,7 @@
 </head>
 <body>
 	<header>
-		<img src="images/earth.png">
+		<img src="images/earth.png" alt="logo">
 		<h1 class="pagetitle">Travel the World</h1>
 		<!-- NAVIGARION MENUE -->
 		<nav>
@@ -51,7 +51,7 @@
 		<!-- TRIP PLANNER -->
 		<section id="planner" class="container text"><h2>Trip Planner</h2>
 			<div class="tour"><h3>One Life Adventures - Philippines</h3>
-				<img src="images/philipines.jpg">
+				<img src="images/philipines.jpg" alt=philipines>
 				<div class="details">
 					<div>
 						<p>10</p>
@@ -61,7 +61,7 @@
 				</div>
 			</div>
 			<div class="tour"><h3>Tru Thailand Island Hopper</h3>
-				<img src="images/thailand.jpg">
+				<img src="images/thailand.jpg" alt="thailand">
 				<div class="details">
 					<div>
 						<p>18</p>
@@ -71,7 +71,7 @@
 				</div>
 			</div>
 			<div class="tour"><h3>Essential India</h3>
-				<img src="images/india.jpg">
+				<img src="images/india.jpg" alt="india">
 				<div class="details">
 					<div>
 						<p>15</p>
@@ -82,7 +82,7 @@
 				
 			</div>
 			<div class="tour"><h3>Tokyo to Beijing</h3>
-				<img src="images/japan.jpg">
+				<img src="images/japan.jpg" alt="japan">
 				<div class="details">
 					<div>
 						<p>15</p>
@@ -93,7 +93,7 @@
 			</div>
 				
 			<div class="tour"><h3>Highlights of Georgia & Armenia</h3>
-				<img src="images/georgia.jpg">
+				<img src="images/georgia.jpg" alt="georgia">
 				<div class="details">
 					<div>
 						<p>12</p>
@@ -104,7 +104,7 @@
 				
 			</div>
 			<div class="tour"><h3>Nuremberg, Bavaria</h3>
-				<img src="images/germany.jpg">
+				<img src="images/germany.jpg" alt="germany">
 				<div class="details">
 					<div>
 						<p>5</p>
@@ -115,7 +115,7 @@
 				
 			</div>
 			<div class="tour"><h3>Hallstatt</h3>
-				<img src="images/hallstatt.jpg">
+				<img src="images/hallstatt.jpg" alt="austria">
 				<div class="details">
 					<div>
 						<p>4</p>
@@ -126,7 +126,7 @@
 				
 			</div>
 			<div class="tour"><h3>Rio de Janeiro</h3>
-				<img src="images/rio.jpg">
+				<img src="images/rio.jpg" alt="rio">
 				<div class="details">
 					<div>
 						<p>18</p>
@@ -137,7 +137,7 @@
 				
 			</div>
 			<div class="tour"><h3>Marocco</h3>
-				<img src="images/marocco.jpg">
+				<img src="images/marocco.jpg" alt="marocco">
 				<div class="details">
 					<div>
 						<p>10</p>
@@ -196,7 +196,7 @@
 					<p>Phone number: </p>
 					<input type="tel" placeholder="Your phone number" required>
 				</div>
-				<button onclick="setSize(this)"class="tick" type="submit" onclick="alert('Thank you!')"> </button>
+				<button class="tick" type="submit" onclick="alert('Thank you!')"> </button>
 			<!-- 	<button onclick="changeBg('red')"class="tick" type="submit" onclick="alert('Thank you!')"> </button>
 				<button onclick="changeBg('yellow')"class="tick" type="submit" onclick="alert('Thank you!')"> </button>
 				<button onclick="changeBg('blue')"class="tick" type="submit" onclick="alert('Thank you!')"> </button>
@@ -222,9 +222,9 @@
 
 
 	</footer>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script type="text/javascript" src="jQ.js"></script>
-<script type="text/javascript" src="cart.js"></script>	
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="jQ.js"></script>
+<script src="cart.js"></script>	
 
 <div id="dark" onclick="closeCart()"></div>
 
@@ -233,6 +233,7 @@
 	<h2>This is a cart</h2>
 	<table>
 		<thead>
+		    <tr>
 			<th></th>
 			<th>Product</th>
 			<th></th>
@@ -240,6 +241,7 @@
 			<th>Amount</th>
 			<th>Sum</th>
 			<th>X</th>
+            </tr>
 		</thead>
 
 		<tr>
