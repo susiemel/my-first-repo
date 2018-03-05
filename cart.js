@@ -28,20 +28,27 @@ for (var i = 0; i < buttons.length; i++) {
 
 var index = 1; 
 
-
-function openCart() {
-	var cart = document.getElementById('cart');
-	cart.style.display = 'block';
-    dark.style.display = 'block';
-
+function toggleCart() {
+    var element = document.getElementById('cart');
+    element.classList.toggle('#cart.open, #dark.open');
+    
 }
 
-function closeCart() {
-	var cart = document.getElementById('cart');
-	cart.style.display = 'none';
-    dark.style.display = 'none';
 
-}
+
+//function openCart() {
+//	var cart = document.getElementById('cart');
+//	cart.style.display = 'block';
+//    dark.style.display = 'block';
+//
+//}
+//
+//function closeCart() {
+//	var cart = document.getElementById('cart');
+//	cart.style.display = 'none';
+//    dark.style.display = 'none';
+//
+//}
 
 function addElementToCart() {
 	var table = document.querySelector('#cart table tbody');

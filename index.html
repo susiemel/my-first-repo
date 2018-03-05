@@ -20,7 +20,7 @@
 				<li><a href="#planner">Trip Planner</a></li>
 				<li><a href="#info">Travel Info</a></li>
 				<li><a href="#contacts">Contacts</a></li>
-				<li>Cart</li>
+				<li onclick="toggleCart()">Cart</li>
 			</ul>
 		</nav>
 	</header>
@@ -226,10 +226,10 @@
 <script src="jQ.js"></script>
 <script src="cart.js"></script>	
 
-<div id="dark" onclick="closeCart()"></div>
+<div id="dark" onclick="toggleCart()"></div>
 
 <div id="cart">
-	<button id="closeCart" onclick="closeCart()">X</button>
+	<button id="cart" onclick="toggleCart()">X</button>
 	<h2>This is a cart</h2>
 	<table>
 		<thead>
